@@ -12,7 +12,7 @@ from sklearn.cluster import KMeans
 import pandas as pd
 
 # Load the data from Excel into a dataframe named df
-df = pd.read_excel('CS379T-Week-1-IP.xls')
+df = pd.read_excel('titanic.xls')
 
 # Drop columns from the dataset that I believe do not contribute to the survivablitiy of the passenger
 df = df.drop(columns=['name', 'ticket', 'body', 'cabin', 'home.dest', 'embarked'])
